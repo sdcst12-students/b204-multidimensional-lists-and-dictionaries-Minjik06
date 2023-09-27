@@ -22,12 +22,12 @@ teamData = {
         'goalsAgainst' : 0
     },
     'BC' : {}
-}
-
-def app():
-
-
+        
     
+
+
+
+
 def score():
     for i in games:
         if games[i]['home']=='AB':
@@ -55,3 +55,17 @@ def tests():
     assert teamData['BC']['gamesPlayed'] == 12
     assert teamData['BC']['wins'] == 5
 
+
+
+
+"""teamData = {
+    'AB' : {
+        'gamesPlayed' : 0,
+        'wins' : 0,
+        'losses' : 0,
+        'ties' : 0,
+        'goalsFor' : 0,
+        'goalsAgainst' : 0
+    },
+    'BC' : {}
+}"""
