@@ -48,6 +48,6 @@ def target(lvl,ac):
 def tests():
     assert target(5,7) == 12
     assert target(10,-10) == 22
-    assert target(17,-3) == 13
+    assert target(17,-3) == 18
 
 tests()

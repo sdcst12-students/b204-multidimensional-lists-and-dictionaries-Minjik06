@@ -156,7 +156,7 @@ lengthg=len([d for d in games if isinstance(d, dict)])
    
 def score():
     for i in range(lengthg):
-        if games[i]['home']=='AB':
+        if games[i]['home']=='AB' or games[i]['away']=='AB':
             teamData['AB']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['AB']['losses']+=1
@@ -166,7 +166,7 @@ def score():
                 teamData['AB']['ties']+=1
             teamData['AB']['goalsFor']+=games[i]['homeScore']
             teamData['AB']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='BC':
+        elif games[i]['home']=='BC'or games[i]['away']=='BC':
             teamData['BC']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['BC']['losses']+=1
@@ -176,7 +176,7 @@ def score():
                 teamData['BC']['ties']+=1
             teamData['BC']['goalsFor']+=games[i]['homeScore']
             teamData['BC']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='MN':
+        elif games[i]['home']=='MN' or games[i]['away']=='MN':
             teamData['MN']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['MN']['losses']+=1
@@ -186,7 +186,7 @@ def score():
                 teamData['MN']['ties']+=1
             teamData['MN']['goalsFor']+=games[i]['homeScore']
             teamData['MN']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='SK':
+        elif games[i]['home']=='SK'or games[i]['away']=='SK':
             teamData['SK']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['SK']['losses']+=1
@@ -196,7 +196,7 @@ def score():
                 teamData['SK']['ties']+=1
             teamData['SK']['goalsFor']+=games[i]['homeScore']
             teamData['SK']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='ON':
+        elif games[i]['home']=='ON' or games[i]['away']=='ON':
             teamData['ON']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['ON']['losses']+=1
@@ -206,7 +206,7 @@ def score():
                 teamData['ON']['ties']+=1
             teamData['ON']['goalsFor']+=games[i]['homeScore']
             teamData['ON']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='QC':
+        elif games[i]['home']=='QC' or games[i]['away']=='QC':
             teamData['QC']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['QC']['losses']+=1
@@ -216,7 +216,7 @@ def score():
                 teamData['QC']['ties']+=1
             teamData['QC']['goalsFor']+=games[i]['homeScore']
             teamData['QC']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='PE':
+        elif games[i]['home']=='PE' or games[i]['away']=='PE':
             teamData['PE']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['PE']['losses']+=1
@@ -226,7 +226,7 @@ def score():
                 teamData['PE']['ties']+=1
             teamData['PE']['goalsFor']+=games[i]['homeScore']
             teamData['PE']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NS':
+        elif games[i]['home']=='NS'or games[i]['away']=='NS':
             teamData['NS']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['NS']['losses']+=1
@@ -236,7 +236,7 @@ def score():
                 teamData['NS']['ties']+=1
             teamData['NS']['goalsFor']+=games[i]['homeScore']
             teamData['NS']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NB':
+        elif games[i]['home']=='NB'or games[i]['away']=='NB':
             teamData['NB']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['NB']['losses']+=1
@@ -246,7 +246,7 @@ def score():
                 teamData['NB']['ties']+=1
             teamData['NB']['goalsFor']+=games[i]['homeScore']
             teamData['NB']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NL':
+        elif games[i]['home']=='NL'or games[i]['away']=='NL':
             teamData['NL']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['NL']['losses']+=1
@@ -256,7 +256,7 @@ def score():
                 teamData['NL']['ties']+=1
             teamData['NL']['goalsFor']+=games[i]['homeScore']
             teamData['NL']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='YT':
+        elif games[i]['home']=='YT'or games[i]['away']=='YT':
             teamData['YT']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['YT']['losses']+=1
@@ -266,7 +266,7 @@ def score():
                 teamData['YT']['ties']+=1
             teamData['YT']['goalsFor']+=games[i]['homeScore']
             teamData['YT']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NT':
+        elif games[i]['home']=='NT'or games[i]['away']=='NT':
             teamData['NT']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['NT']['losses']+=1
@@ -276,7 +276,7 @@ def score():
                 teamData['NT']['ties']+=1
             teamData['NT']['goalsFor']+=games[i]['homeScore']
             teamData['NT']['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NU':
+        elif games[i]['home']=='NU'or games[i]['away']=='NU':
             teamData['NU']['gamesPlayed']+=1
             if games[i]['homeScore']<games[i]['awayScore']:
                 teamData['NU']['losses']+=1
@@ -288,7 +288,7 @@ def score():
             teamData['NU']['goalsAgainst']+=games[i]['awayScore']
 
 def tests():
-    assert teamData['BC']['gamesPlayed'] == 11
+    assert teamData['BC']['gamesPlayed'] == 12
     assert teamData['BC']['wins'] == 5
 
 app()
