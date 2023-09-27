@@ -50,16 +50,8 @@ teamData = {
         'goalsFor' : 0,
         'goalsAgainst' : 0
     },
-<<<<<<< HEAD
-    'BC' : {}
-        
-    
-
-
-
-
-=======
 }
+
 
 
 def app():
@@ -163,7 +155,6 @@ def app():
 
 lengthg=len([d for d in games if isinstance(d, dict)])
    
->>>>>>> 6a0c971ece402fec45cb4818cb1385756287aa12
 def score():
     for i in range(lengthg):
         if games[i]['home']=='AB' or games[i]['away']=='AB':
@@ -307,156 +298,3 @@ tests()
 
 #print(teamData['NK']['gamesPlayed'])
 
-"""for i in range(lengthg):
-        if games[i]['home']=='AB':
-            teamData[teams.index('AB')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('AB')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('AB')]['wins']+=1
-            else:
-                teamData[teams.index('AB')]['ties']+=1
-            teamData[teams.index('AB')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('AB')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='BC':
-            teamData[teams.index('BC')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('BC')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('BC')]['wins']+=1
-            else:
-                teamData[teams.index('BC')]['ties']+=1
-            teamData[teams.index('BC')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('BC')]['goalsAgainst']+=games[i]['awayScore']
-<<<<<<< HEAD
-
-def tests():
-    assert teamData['BC']['gamesPlayed'] == 12
-    assert teamData['BC']['wins'] == 5
-
-
-
-
-"""teamData = {
-    'AB' : {
-        'gamesPlayed' : 0,
-        'wins' : 0,
-        'losses' : 0,
-        'ties' : 0,
-        'goalsFor' : 0,
-        'goalsAgainst' : 0
-    },
-    'BC' : {}
-}"""
-=======
-        elif games[i]['home']=='MN':
-            teamData[teams.index('MN')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('MN')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('MN')]['wins']+=1
-            else:
-                teamData[teams.index('MN')]['ties']+=1
-            teamData[teams.index('MN')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('MN')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='SK':
-            teamData[teams.index('SK')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('SK')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('SK')]['wins']+=1
-            else:
-                teamData[teams.index('SK')]['ties']+=1
-            teamData[teams.index('SK')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('SK')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='ON':
-            teamData[teams.index('ON')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('ON')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('ON')]['wins']+=1
-            else:
-                teamData[teams.index('ON')]['ties']+=1
-            teamData[teams.index('ON')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('ON')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='QC':
-            teamData[teams.index('QC')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('QC')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('QC')]['wins']+=1
-            else:
-                teamData[teams.index('QC')]['ties']+=1
-            teamData[teams.index('QC')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('QC')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='PE':
-            teamData[teams.index('PE')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('PE')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('PE')]['wins']+=1
-            else:
-                teamData[teams.index('PE')]['ties']+=1
-            teamData[teams.index('PE')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('PE')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NS':
-            teamData[teams.index('NS')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('NS')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('NS')]['wins']+=1
-            else:
-                teamData[teams.index('NS')]['ties']+=1
-            teamData[teams.index('NS')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('NS')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NB':
-            teamData[teams.index('NB')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('NB')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('NB')]['wins']+=1
-            else:
-                teamData[teams.index('NB')]['ties']+=1
-            teamData[teams.index('NB')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('NB')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NL':
-            teamData[teams.index('NL')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('NL')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('NL')]['wins']+=1
-            else:
-                teamData[teams.index('NL')]['ties']+=1
-            teamData[teams.index('NL')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('NL')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='YT':
-            teamData[teams.index('YT')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('YT')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('YT')]['wins']+=1
-            else:
-                teamData[teams.index('YT')]['ties']+=1
-            teamData[teams.index('YT')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('YT')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NT':
-            teamData[teams.index('NT')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('NT')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('NT')]['wins']+=1
-            else:
-                teamData[teams.index('NT')]['ties']+=1
-            teamData[teams.index('NT')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('NT')]['goalsAgainst']+=games[i]['awayScore']
-        elif games[i]['home']=='NU':
-            teamData[teams.index('NU')]['gamesPlayed']+=1
-            if games[i]['homeScore']<games[i]['awayScore']:
-                teamData[teams.index('NU')]['losses']+=1
-            elif games[i]['homeScore']>games[i]['awayScore']:
-                teamData[teams.index('NU')]['wins']+=1
-            else:
-                teamData[teams.index('NU')]['ties']+=1
-            teamData[teams.index('NU')]['goalsFor']+=games[i]['homeScore']
-            teamData[teams.index('NU')]['goalsAgainst']+=games[i]['awayScore']"""
->>>>>>> 6a0c971ece402fec45cb4818cb1385756287aa12
