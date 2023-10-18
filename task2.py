@@ -152,7 +152,6 @@ def app():
         'goalsAgainst' : 0
     }
 
-
 lengthg=len([d for d in games if isinstance(d, dict)])
    
 def score():
